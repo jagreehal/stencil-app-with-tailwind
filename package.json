@@ -4,9 +4,8 @@
   "version": "0.0.1",
   "description": "Creating Stencil Apps with Tailwind",
   "scripts": {
-    "build": "stencil build",
+    "build": "BASE_URL=https://stencil-app-with-tailwind.netlify.app stencil build",
     "build:local": "BASE_URL=http://localhost:5000/ stencil build",
-    "deploy": "BASE_URL=https://jagreehal.github.io/stencil-app-with-tailwind/ npm run build && touch www/.nojekyll && gh-pages -d www -t true",
     "start": "stencil build --dev --watch --serve",
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",
